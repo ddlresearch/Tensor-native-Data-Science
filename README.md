@@ -52,7 +52,11 @@ __Papers that discusses BFS__
 ### Topic 5: Tensor PARALLELISM
 1. Analyzing the Performance of Graph Neural Networks with Pipe Parallelism (GNNSys'21) [[Paper](https://arxiv.org/pdf/2012.10840.pdf)]
 2. G^3: When Graph Neural Networks Meet Parallel Graph Processing Systems on GPUs (VLDB'20 Demo) [[Paper](http://www.vldb.org/pvldb/vol13/p2813-liu.pdf)] [[Code](https://github.com/Xtra-Computing/G3)] [[Video](https://www.youtube.com/watch?v=UJH0nh38wSg)]
-
+3. Demystifying Parallel and Distributed Deep Learning: An In-Depth Concurrency Analysis [[Paper](https://arxiv.org/pdf/1802.09941.pdf)]
+> * Section-5: Given that neural network layers operate on 4-dimensional tensors (Fig. 8a) and the high locality of the operations, there are several opportunities for parallelizing layer execution. In most cases, computations (e.g., in the case of pooling operators) can be directly parallelized.
+> * In order to expose parallelism in other operator types, computations have to be reshaped
+4. Megatron-LM: Training Multi-Billion Parameter Language Models Using Model Parallelism [[Paper1](https://arxiv.org/pdf/1909.08053.pdf)][[Paper2](https://arxiv.org/pdf/2104.04473.pdf)] [[Code](https://github.com/nvidia/megatron-lm)]
+> * MegatronLM: Model Parallelism Using Multiple Tensors in PyTorch (a good summary) [[Post](https://medium.com/@esaliya/megatronlm-model-parallelism-using-multiple-tensors-in-pytorch-eebd03974776)]
 ### Backup: Other Papers or Materials 
 1. Tensor Algebra and Tensor Analysis for Engineers (2015) [[Springer](https://link.springer.com/book/10.1007/978-3-319-16342-0)]
 2. Deep-Learning-with-PyTorch (book)
