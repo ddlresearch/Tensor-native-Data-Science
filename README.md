@@ -49,6 +49,10 @@ __Papers that discusses BFS__
 1. Tensor Relational Algebra for Distributed Machine Learning System Design (VLDB 2021) [[Paper](http://www.vldb.org/pvldb/vol14/p1338-yuan.pdf)]
 2. There are a set of studies about relation algebra in LA in GraphBLAS [[A good summary](http://mit.bme.hu/~szarnyas/grb/graphblas-outlook-to-other-fields.pdf)]
 
+### Topic 5: Tensor PARALLELISM
+1. Analyzing the Performance of Graph Neural Networks with Pipe Parallelism (GNNSys'21) [[Paper](https://arxiv.org/pdf/2012.10840.pdf)]
+2. G^3: When Graph Neural Networks Meet Parallel Graph Processing Systems on GPUs (VLDB'20 Demo) [[Paper](http://www.vldb.org/pvldb/vol13/p2813-liu.pdf)] [[Code](https://github.com/Xtra-Computing/G3)] [[Video](https://www.youtube.com/watch?v=UJH0nh38wSg)]
+
 ### Backup: Other Papers or Materials 
 1. Tensor Algebra and Tensor Analysis for Engineers (2015) [[Springer](https://link.springer.com/book/10.1007/978-3-319-16342-0)]
 2. Deep-Learning-with-PyTorch (book)
