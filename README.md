@@ -57,6 +57,10 @@ __Papers that discusses BFS__
 > * In order to expose parallelism in other operator types, computations have to be reshaped
 4. Megatron-LM: Training Multi-Billion Parameter Language Models Using Model Parallelism [[Paper1](https://arxiv.org/pdf/1909.08053.pdf)][[Paper2](https://arxiv.org/pdf/2104.04473.pdf)] [[Code](https://github.com/nvidia/megatron-lm)]
 > * MegatronLM: Model Parallelism Using Multiple Tensors in PyTorch (a good summary) [[Post](https://medium.com/@esaliya/megatronlm-model-parallelism-using-multiple-tensors-in-pytorch-eebd03974776)]
+5. Adaptive Load Balancing for Parallel GNN Training (GNNSys'21) [[Paper](https://gnnsys.github.io/papers/GNNSys21_paper_18.pdf)]
+6. Measuring the Effects of Data Parallelism on Neural Network Training  (JMLR'18) [[Paper](https://www.jmlr.org/papers/volume20/18-789/18-789.pdf)]
+7. Analyzing the Performance of Graph Neural Networks with Pipe Parallelism (GNNSys'21) [[Paper](https://arxiv.org/pdf/2012.10840.pdf)]
+
 ### Backup: Other Papers or Materials 
 1. Tensor Algebra and Tensor Analysis for Engineers (2015) [[Springer](https://link.springer.com/book/10.1007/978-3-319-16342-0)]
 2. Deep-Learning-with-PyTorch (book)
