@@ -17,6 +17,8 @@ Note: The idea of linear representation of graph algorithms has been under activ
 > * List of GraphBLAS-related books, papers, presentations, posters, and software [[Github](https://github.com/GraphBLAS/GraphBLAS-Pointers)]
 > * Library of GraphBLAS algorithms [[Github](https://github.com/GraphBLAS/LAGraph)]
 > * LAGraph: A Community Effort to Collect Graph Algorithms Built on Top of the GraphBLAS (What’s next for the GraphBLAS?)
+> * GraphBLAS materials [[Link](http://mit.bme.hu/~szarnyas/grb/)]
+> * GraphBLAS in Python [[Github](https://github.com/Graphegon/pygraphblas)]
 3. Navigating the Maze of Graph Analytics Frameworks using Massive Graph Datasets (SIGMOD 2014) [[Paper](https://mobisocial.stanford.edu/papers/sigmod14n.pdf)]
 4. Graph Processing on GPUs: A Survey [[Paper](https://www.dcs.warwick.ac.uk/~liganghe/papers/ACM-Computing-Surveys-2017.pdf)]
 > *  This article surveys the key issues of graph processing on GPUs, including data layout, memory access pattern, workload mapping, and specific GPU programming.
