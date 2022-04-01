@@ -22,14 +22,39 @@ Note: The idea of linear representation of graph algorithms has been under activ
 > *  This article surveys the key issues of graph processing on GPUs, including data layout, memory access pattern, workload mapping, and specific GPU programming.
 5. Graph Algorithms in the Language of Linear Algebra (The GALLA Book 2011) [[Slides](https://sites.cs.ucsb.edu/~gilbert/cs240a/slides/old/cs240a-GALA.pdf)]
 
-__Papers that discusses BFS__
+#### Papers about Graph Primitives in GraphBLAS
+__BFS__
 1. A good example of BFS in vector-matrix multiplication [[Slides](https://archive.fosdem.org/2020/schedule/event/graphblas/attachments/slides/4132/export/events/attachments/graphblas/slides/4132/graphblas_introduction.pdf)]
 2. Direction-Optimizing Breadth-First Search (SC 2012, adopted to GraphBLAS in 2018)
 > * Switches between push (𝐯𝐀) and pull (𝐀 ⊤𝐯) during execution:
 >> Use the push direction when the frontier is small; Use the pull direction when the frontier becomes large
-3.  High-performance linear algebra-based graph framework on the GPU (PhD thesis, UC Davis 2019)
-4.  Implementing Push-Pull Efficiently in GraphBLAS (ICPP 2018)
-5.  GraphBLAS: Concepts, algorithms, and applications (Scheduling Workshop 2019)
+3. High-performance linear algebra-based graph framework on the GPU (PhD thesis, UC Davis 2019)
+> * Chapter 5 is a more detailed and corrected version of the 4th paper
+4. Implementing Push-Pull Efficiently in GraphBLAS (ICPP 2018)
+6. [Just For Reference] GraphBLAS: Concepts, algorithms, and applications (Scheduling Workshop 2019)
+7. Optimal algebraic Breadth-First Search for sparse graphs (preprint, 2019)
+8. A GraphBLAS solution to the SIGMOD 2014 Programming Contest using multi-source BFS (HPEC 2020)
+
+__DFS__
+1. Linear Algebraic Depth-First Search (ARRAY workshop @ PLDI 2019)
+
+__Shortest Path__
+1. [Just For Reference] Shortest-path kernels on graphs [[Paper](https://www.dbs.ifi.lmu.de/~borgward/papers/BorKri05.pdf)]
+2. Delta-Stepping SSSP: From Vertices and Edges to GraphBLAS Implementations (GrAPL @ IPDPS 2019)
+> * In its Preliminaries section, this paper contains the translation of a few vertex-centric and edge-centric design patterns to linear algebra.
+3. Path Problems in Networks (Morgan & Claypool Publishers, 2010) 
+> * This book is about the algebraic path problem – a semiring-based generalization of shortest path problem. The mathematical foundations of semiring-based graph analysis are described. Basic ideas to create new semirings to solve new problems are described.
+> * The section 3.1 "Alternative viewpoints: paths and matrices" (p17-19) provides a matrix-based framework for the algebraic path problem which is highly relevant to GraphBLAS.
+> * The table on pages 58-59 contains 29 different semirings and respective applied problems.
+
+__Connected Components__
+1. Parallel algorithms for finding connected components using linear algebra (Journal of Parallel and Distributed Computing 2020) 
+2. FastSV: A Distributed-Memory Connected Component Algorithm with Fast Convergence (PP 2020)
+3. LACC: A Linear-Algebraic Algorithm for Finding Connected Components in Distributed Memory (IPDPS 2019) 
+
+__PageRank__
+1. The GraphBLAS in Julia and Python:the PageRank and Triangle Centralities (HPEC 2021)
+2. GraphBLAS: Handling performance concerns in large graph analytics – invited paper (CF 2018) [[Paper](https://www.ibm.com/university/power/images/CF2018.pdf)]
 
 ### Topic 2: Graph Algorithms/Learning on Tensors
 1. Tensors: An abstraction for general data processing (VLDB 2021) (The Hummingbird project) [[Paper](http://vldb.org/pvldb/vol14/p1797-koutsoukos.pdf)] [[Github](https://github.com/microsoft/hummingbird)]
@@ -48,6 +73,10 @@ __Papers that discusses BFS__
 ### Topic 4: Query and Relational Algebra on Tensors 
 1. Tensor Relational Algebra for Distributed Machine Learning System Design (VLDB 2021) [[Paper](http://www.vldb.org/pvldb/vol14/p1338-yuan.pdf)]
 2. There are a set of studies about relation algebra in LA in GraphBLAS [[A good summary](http://mit.bme.hu/~szarnyas/grb/graphblas-outlook-to-other-fields.pdf)]
+3. Serving Deep Learning Models with Deduplication from Relational Databases (arxiv 2021) [[Paper](https://arxiv.org/pdf/2201.10442.pdf)]
+4. Query Processing on Tensor Computation Runtimes [[Paper](https://arxiv.org/pdf/2203.01877.pdf)] [[Blog](https://medium.com/syncedreview/meet-tqp-the-first-query-processor-to-run-on-tensor-computation-runtimes-delivers-up-to-20x-7d1f09d3b9f8)] [[News](https://www.marktechpost.com/2022/03/13/researchers-from-the-university-of-washington-and-uc-san-diego-introduce-tensor-query-processor-tqp-with-tensor-computation-runtimes-for-query-processing-20x-speedup/)]
+> * Tensor Query Processor (TQP): a SQL query processor leveraging the tensor interface of TCRs
+
 
 ### Topic 5: Tensor PARALLELISM
 1. Analyzing the Performance of Graph Neural Networks with Pipe Parallelism (GNNSys'21) [[Paper](https://arxiv.org/pdf/2012.10840.pdf)]
@@ -70,5 +99,8 @@ __Papers that discusses BFS__
 6. Tensor Processing Primitives: A Programming Abstraction for Efficiency and Portability in Deep Learning & HPC Workloads (Arxiv 2021) [[Paper](https://arxiv.org/pdf/2104.05755.pdf)]
 7. FreeTensor: A Free-form DSL with Holistic Optimization for Irregular Tensor Programs (accpeted in PLDI 2022, no source yet)
 9. Tensor Completion for Weakly-Dependent Data on Graph for Metro Passenger Flow Prediction (AAAI 2020) [[Paper](https://ojs.aaai.org//index.php/AAAI/article/view/5915)]
+10. The Gunrock series [[Link](https://gunrock.github.io/docs/#/gunrock/publications_and_presentations)]
+> * Gunrock: A High-Performance Graph Processing Library on the GPU [[Paper](https://arxiv.org/pdf/1501.05387.pdf)], which evaluate Gunrock on five graph
+primitives (BFS, BC, SSSP, CC, and PageRank).
 
 
