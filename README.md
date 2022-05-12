@@ -92,6 +92,17 @@ __PageRank__
 6. Measuring the Effects of Data Parallelism on Neural Network Training  (JMLR'18) [[Paper](https://www.jmlr.org/papers/volume20/18-789/18-789.pdf)]
 7. Analyzing the Performance of Graph Neural Networks with Pipe Parallelism (GNNSys'21) [[Paper](https://arxiv.org/pdf/2012.10840.pdf)]
 
+
+
+### Topic 6: TCR Efficiency (Tensor Program Optimization)
+1. Learning to Optimize Tensor Programs (Nips'18 Tianqi Chen, AutoTVM) [[Paper](https://arxiv.org/pdf/1805.08166.pdf)]
+> *  We learn domain-specific statisticalcost models to guide the search of tensor operator implementations over billions of possible program variants. We further accelerate the search using effective model transfer across workloads. Experimental results show that our framework delivers performance that is competitive with state-of-the-art hand-tuned libraries for low-power CPUs, mobile GPUs, and server-class GPUs.
+2. The CoRa Tensor Compiler: Compilation for Ragged Tensors with Minimal Padding [[Paper](https://www.pdl.cmu.edu/PDL-FTP/BigLearning/fegade-2110.10221.pdf)]
+> * There is often variation in the shape and size of input data used for deep learning. In many cases, such data can be represented using tensors with non-uniform shapes, or ragged tensors ...
+> *  Such techniques can, however, lead to a lot of wasted computation and therefore, a loss in performance. This paper presents CORA, a tensor compiler that allows users to easily generate efficient code for ragged tensor operators targeting a wide range of CPUs and GPUs. 
+
+ 
+
 ### Backup: Other Papers or Materials 
 1. Tensor Algebra and Tensor Analysis for Engineers (2015) [[Springer](https://link.springer.com/book/10.1007/978-3-319-16342-0)]
 2. Deep-Learning-with-PyTorch (book)
