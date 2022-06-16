@@ -12,7 +12,8 @@
 > * Tensor Query Processor (TQP): a SQL query processor leveraging the tensor interface of TCRs
 2. TDM: A Tensor Data Model for Logical Data Independence in Polystore Systems [[Paper](http://eric-leclercq.fr/papers/VLDB-Polystore-2018.pdf)]
 > * ...polystore systems as a collection of heterogeneous data stores with multiple query interfaces
-
+3. TCUDB: Accelerating Database with Tensor Processors [[Paper](https://arxiv.org/pdf/2112.07552.pdf)]
+> * In this work, we explored opportunities of accelerating database systemsusing NVIDIA’s Tensor Core Units (TCUs). We present TCUDB, aTCU-accelerated query engine processing a set of query operatorsincluding natural joins and group-by aggregates as matrix operatorswithin TCUs
 ### ML Inference
 1. Exploiting tensor networks for efficient machine learning (PhD thesis) [[Link](https://hub.hku.hk/handle/10722/308618)]
 > * This thesis explores the tensorization and compression of machine learning models (SVMs and RBMs).
