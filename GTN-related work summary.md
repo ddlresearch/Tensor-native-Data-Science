@@ -14,6 +14,9 @@
 > * ...polystore systems as a collection of heterogeneous data stores with multiple query interfaces
 3. TCUDB: Accelerating Database with Tensor Processors [[Paper](https://arxiv.org/pdf/2112.07552.pdf)]
 > * In this work, we explored opportunities of accelerating database systemsusing NVIDIA’s Tensor Core Units (TCUs). We present TCUDB, aTCU-accelerated query engine processing a set of query operatorsincluding natural joins and group-by aggregates as matrix operatorswithin TCUs
+4. Tensor Relational Algebra for Distributed Machine Learning System Design (VLDB 2021) [[Paper](http://www.vldb.org/pvldb/vol14/p1338-yuan.pdf) ARIZONA STATE UNIVERSITY]
+> * We have introduced the tensor relational algebra (TRA), and suggested this as the interface that could be exported by the back-end of a machine learning system. We have showed through extensive experimentation that a computation expressed in the TRA then transformed into the implementation algebra and optimized, is competitive with (and often faster than) other options, including HPC softwares such as ScaLAPACK, and ML softwares such as TensorFlow and PyTorch.
+5. TensorDB and Tensor-Relational Model (TRM) for Efficient Tensor-Relational Operations [[PhD Thesis](https://core.ac.uk/download/pdf/79573386.pdf) ARIZONA STATE UNIVERSITY]
 ### ML Inference
 1. Exploiting tensor networks for efficient machine learning (PhD thesis) [[Link](https://hub.hku.hk/handle/10722/308618)]
 > * This thesis explores the tensorization and compression of machine learning models (SVMs and RBMs).
