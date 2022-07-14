@@ -33,7 +33,7 @@
 > *  Such techniques can, however, lead to a lot of wasted computation and therefore, a loss in performance. This paper presents CORA, a tensor compiler that allows users to easily generate efficient code for ragged tensor operators targeting a wide range of CPUs and GPUs. 
 3. TVM Guides: Use Tensorize to Leverage Hardware Intrinsics[[Doc](https://tvm.apache.org/docs/how_to/work_with_schedules/tensorize.html)]
 4. SIMD^2: A Generalized Matrix Instruction Set for Accelerating Tensor Computation beyond GEMM [[Paper](https://arxiv.org/pdf/2205.01252.pdf)]
-
+5. SparTA: Deep-Learning Model Sparsity via Tensor-with-Sparsity-Attribute [[OSDI'22](https://www.usenix.org/system/files/osdi22-zheng-ningxin.pdf)]
 
 ### Vectorized and Distributed
 1. RDD-based API: vector and distributed matrix [[Doc](https://spark.apache.org/docs/latest/mllib-data-types.html)]
