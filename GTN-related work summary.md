@@ -9,8 +9,8 @@ Note: We highlighht the most related papers with 🌟.
 
 
 ### SQL
-1. Query Processing on Tensor Computation Runtimes [[Paper](https://arxiv.org/pdf/2203.01877.pdf)] [[Blog](https://medium.com/syncedreview/meet-tqp-the-first-query-processor-to-run-on-tensor-computation-runtimes-delivers-up-to-20x-7d1f09d3b9f8)] [[News](https://www.marktechpost.com/2022/03/13/researchers-from-the-university-of-washington-and-uc-san-diego-introduce-tensor-query-processor-tqp-with-tensor-computation-runtimes-for-query-processing-20x-speedup/)]🌟
-> * Tensor Query Processor (TQP): a SQL query processor leveraging the tensor interface of TCRs
+1. Query Processing on Tensor Computation Runtimes (VLDB 2022) [[Paper](https://arxiv.org/pdf/2203.01877.pdf)] [[Blog](https://medium.com/syncedreview/meet-tqp-the-first-query-processor-to-run-on-tensor-computation-runtimes-delivers-up-to-20x-7d1f09d3b9f8)] [[News](https://www.marktechpost.com/2022/03/13/researchers-from-the-university-of-washington-and-uc-san-diego-introduce-tensor-query-processor-tqp-with-tensor-computation-runtimes-for-query-processing-20x-speedup/)] 🌟
+2. Share the tensor tea: how databases can leverage the machine learning ecosystem (VLDB 2022) [[Paper](https://dl.acm.org/doi/abs/10.14778/3554821.3554853)] 🌟
 2. TDM: A Tensor Data Model for Logical Data Independence in Polystore Systems [[Paper](http://eric-leclercq.fr/papers/VLDB-Polystore-2018.pdf)]
 > * ...polystore systems as a collection of heterogeneous data stores with multiple query interfaces
 3. TCUDB: Accelerating Database with Tensor Processors [[Paper](https://arxiv.org/pdf/2112.07552.pdf)]
